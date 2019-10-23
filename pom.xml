@@ -4,8 +4,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>JenkinsMaven</groupId>
-    <artifactId>com.krsoft</artifactId>
+    <groupId>com.krsoft.jenkins</groupId>
+    <artifactId>jenkins-example</artifactId>
     <version>1.0-SNAPSHOT</version>
     <dependencies>
         <dependency>
@@ -30,5 +30,18 @@
             </plugin>
         </plugins>
     </build>
+    <repositories>
+        <repository>
+            <id>myMavenRepo.read</id>
+            <url>https://mymavenrepo.com/repo/lHK34uWz5kknUb8Aw3IW/</url>
+        </repository>
+    </repositories>
+
+    <distributionManagement>
+        <repository>
+            <id>myMavenRepo.write</id>
+            <url>https://mymavenrepo.com/repo/aOQ2zgVBYJW62vzVbMmf/</url>
+        </repository>
+    </distributionManagement>
 
 </project>
